@@ -15,10 +15,24 @@
     <div class="container mt-5 mb-5">
         <div class="row justify-content-center">
             <div class="col-md-12">
+
+                <!-- flash message -->
+                @if(session()->has('message'))
+                <div class="alert alert-success">
+                    {{ session('message') }}
+                </div>
+                @endif
+                <!-- end flash message -->
+
+                <!-- component -->
+                @yield('content')
+                <!-- end component -->
+
             </div>
         </div>
     </div>
-
+    <!-- javascript -->
+    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 
 </html>
