@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <livewire:styles />
     <livewire:scripts />
+    <!-- javascript -->
+    <script src="{{ mix('js/app.js') }}"></script>
 </head>
 
 <body>
@@ -31,8 +33,6 @@
             </div>
         </div>
     </div>
-    <!-- javascript -->
-    <script src="{{ mix('js/app.js') }}"></script>
 </body>
 
 </html>
